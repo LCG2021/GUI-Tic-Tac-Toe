@@ -1,61 +1,34 @@
 # GUI-Tic-Tac-Toe
 Overview
-In this assignment you will create a GUI based game of Connect 4. The game will be played by two players who will take turns dropping their markers into columns. The game will continue until someone wins or the board becomes full. You can see the wikipidia page on Connect 4 if you need more information.
+In this assignment you will create a GUI based game of Tic Tac Toe. The game will be played by two players who will take turns dropping their markers into columns. The game will continue until someone wins or the board becomes full. You can see the wikipidia page on Tic Tac Toe if you need more information.
 
 Details
 Playing The Game
 
-On each turn, the display should show who the current player is.
+RULES FOR TIC-TAC-TOE
 
-The board should get filled from bottom to top just like in real life.
+1. The game is played on a grid that's 3 squares by 3 squares.
 
-After a player drops their marker into the column of their choice, the program should check if he/she is a winner.
+2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
 
-If the current player is a winner, update the display label to reflect the status, and write the name of the winner on a new line in the output file named Connect4-Results.txt. You should also and ask if they want to play again. If they decide to NOT play again and terminate this round of games, write to the output file named Connect4-Results.txt the current champion's name and how many games each player won this round. Otherwise, the alternate player should take a turn.
+3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
 
-If the board is full, check for a winner or a tie. If the game is a tie, indicate that in a seperate line in the output file named Connect4-Results.txt. Ask if the want to play again. If they decide to NOT play again and terminate this round of games, write to the output file named Connect4-Results.txt the current champion's name and how many games each player won this round.
+4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
-Score Board
-Your game must have a score board similar to the one we created for the Tic Tac Toe game that we did in class. Your score board will keep track of each player's name, score, the winner of the last game and the overall champion.
-scoreboard
+HOW CAN I WIN AT TIC-TAC-TOE?
+To beat the computer (or at least tie), you need to make use of a little bit of strategy. Strategy means figuring out what you need to do to win.
 
-Finding A Winner
-A the end of every turn, you will be checking if the current player is a winner. Use the following diagrams to help you in determining which cells need to be checked.
+Part of your strategy is trying to figure out how to get three Xs in a row. The other part is trying to figure out how to stop the computer from getting three Os in a row.
 
+After you put an X in a square, you start looking ahead. Where's the best place for your next X? You look at the empty squares and decide which ones are good choices—which ones might let you make three Xs in a row.
 
-4 Consecutive Markers Of The Same Color In Any Row 
+You also have to watch where the computer puts its O. That could change what you do next. If the computer gets two Os in a row, you have to put your next X in the last empty square in that row, or the computer will win. You are forced to play in a particular square or lose the game.
 
-
-
-
-
-4 Consecutive Markers Of The Same Color In Any Column 
+If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win, but at least you'll tie.
 
 
 
 
 
-4 Consecutive Markers Of The Same Color In Any Upward Diagonal 
 
 
-
-
-
-4 Consecutive Markers Of The Same Color In Any Downward Diagonal 
-
-
-
-
-
-Extra Credit
-Image Icons
-Use image icons on the labels to display a marker when a slot is filled by a player taking a turn (5pts extra).
-
-Player Names
-Allow the users to enter the names for player1 and player2 using your game GUI (5pts extra).
-
-Board Size
-A traditional Connect 4 game is played on a board of 6 rows and 7 columns. Allow the users to select the dimensions of the board using your game GUI. Please note that changing the dimensions of the board should reset the game to the beginning. (10pts extra).
-
-Connect X
-Create a ConnectX game so that the user can play connect4, or connect5, .. or connectX where they choose how many they would like to be in a row to be considered a "win" (15pts extra).
