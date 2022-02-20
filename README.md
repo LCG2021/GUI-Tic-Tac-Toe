@@ -1,4 +1,4 @@
-# GUI-Tic-Tac-Toe
+# Tic-Tac-Toe
 Overview
 In this assignment you will create a GUI based game of Tic Tac Toe. The game will be played by two players who will take turns dropping their markers into columns. The game will continue until someone wins or the board becomes full. You can see the wikipidia page on Tic Tac Toe if you need more information.
 
